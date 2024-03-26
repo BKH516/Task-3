@@ -259,17 +259,23 @@
 }
 
 .text-to-abuot {
-    display: flex;
-    justify-content: center;
     width: 100%;
     margin-bottom: 30px;
 }
 
-.text-to-abuot div {
-    width: 20%;
+.text-to-abuot .text-1 {
+    display: flex;
+    justify-content: center;
     color: white;
-    margin: 25px 0 0 15px;
+    width: 100%;
+}
 
+.text-to-abuot .text-1  {
+    width: 50%;
+    padding: 25px 25%;
+}
+.text-to-abuot .text-1 div {
+     margin: 10px 10px;
 }
 
 .button {
@@ -609,10 +615,18 @@ ul {
         font-size: 15px;
     }
 
+    .text-to-abuot .text-1 {
+        flex-direction: column;
+    }
+
 }
 
-@media (min-width:576px) and (max-width:992px) {
-    
+@media (min-width:576px) and (max-width:930px) {
+
+    .text-to-abuot .text-1 {
+        flex-direction: column;
+    }
+
     .nav {
         justify-content: center;
     }
@@ -626,20 +640,13 @@ ul {
         width:50%;
     }
 
-}
-
-@media (min-width:576px) and (max-width:930px) {
-
     .main section div {
         width:85%;
     }
-
     .div-footer div {
         margin: 25px;
         padding: 0 75px 0 75px;
-
     }
-
     .example-1 .icon-content:hover .tooltip {
         left: 1px;
         top: -60px;
