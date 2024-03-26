@@ -166,7 +166,8 @@
 .main section {
     display: flex;
     justify-content: center;
-    margin: 10px;
+    flex-wrap: wrap;
+    margin:10px;
 }
 
 .main section div {
@@ -262,14 +263,12 @@
     justify-content: center;
     width: 100%;
     margin-bottom: 30px;
-
-
 }
 
 .text-to-abuot div {
     width: 20%;
     color: white;
-    margin: 25px 0 0 10px;
+    margin: 25px 0 0 15px;
 
 }
 
@@ -587,8 +586,17 @@ ul {
     color: #0088cc;
 }
 
+.k {
+    display: flex;
+    justify-content: center;
+    background: #172029;
+    color: white;
+    padding: 15px 0 15px 0;
+    width: 100%;
+    max-height: max-content;
+}
 
-@media (max-width:695px) {
+@media (min-width:200px) and (max-width:576px) {
     .nav {
         justify-content: center;
     }
@@ -603,17 +611,28 @@ ul {
 
 }
 
-.k {
-    display: flex;
-    justify-content: center;
-    background: #172029;
-    color: white;
-    padding: 15px 0 15px 0;
-    width: 100%;
-    max-height: max-content;
+@media (min-width:576px) and (max-width:992px) {
+    
+    .nav {
+        justify-content: center;
+    }
+    .div2 b {
+        text-align: center;
+    }
+    .text p {
+        font-size: 15px;
+    }
+    .main section div {
+        width:50%;
+    }
+
 }
 
-@media (max-width:930px) {
+@media (min-width:576px) and (max-width:930px) {
+
+    .main section div {
+        width:85%;
+    }
 
     .div-footer div {
         margin: 25px;
